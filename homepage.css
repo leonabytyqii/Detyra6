@@ -109,4 +109,32 @@ main {
   padding: 15px;
 }
 
+.news-content h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.news-date {
+  font-size: 13.6px;
+  color: #777;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 15px 8%;
+  background-color: #222;
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+
+
+
 
