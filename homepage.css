@@ -69,3 +69,44 @@ body {
   color: #222;
 }
 
+/* MAIN */
+main {
+  padding: 30px 8%;
+}
+
+/* Seksioni i lajmeve */
+.news-section h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Grid i lajmeve */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card e lajmit */
+.news-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imazhi i lajmit */
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Permbajtja e lajmit */
+.news-content {
+  padding: 15px;
+}
+
+
