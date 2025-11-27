@@ -50,22 +50,5 @@ body {
   gap: 20px;
 }
 
-.main-nav a {
-  text-decoration: none;
-  color: #ddd;
-  font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
 
-.main-nav a:hover {
-  background-color: #fff;
-  color: #222;
-}
-
-.main-nav a.active {
-  background-color: #ffb400;
-  color: #222;
-}
 
