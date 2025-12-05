@@ -9,4 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
   console.log("Email:", email);
   console.log("Password:", password);
+
+  document.body.innerHTML = "<h1 style='font-family:Arial;'>" + email + "</h1>";
+
 });
