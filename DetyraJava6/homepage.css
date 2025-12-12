@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Logo + emri i faqes */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #fff; /* nese s’ka imazh */
+}
+
+.site-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* NAV */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  
+}
+
+.main-nav a:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.main-nav a.active {
+  background-color: #ffb400;
+  color: #222;
+}
+
+/* MAIN */
+main {
+  padding: 30px 8%;
+}
+
+/* Seksioni i lajmeve */
+.news-section h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Grid i lajmeve */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card e lajmit */
+.news-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imazhi i lajmit */
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Permbajtja e lajmit */
+.news-content {
+  padding: 15px;
+}
+
+.news-content h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.news-date {
+  font-size: 13.6px;
+  color: #777;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 15px 8%;
+  background-color: #222;
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+
+
+
+
