@@ -34,3 +34,43 @@ btnApliko.addEventListener('click', () => {
 btnNdryshoPermbajtjen.addEventListener('click', () => {
   editableBox.textContent = 'Përmbajtje e vendosur nga JavaScript.';
 });
+
+// Ushtrimi 4
+const btnTitull = document.getElementById('ndryshoTitullinPare');
+const titujt = document.querySelectorAll('#ushtrimi4 .tituj h3');
+
+btnTitull.addEventListener('click', () => {
+  titujt[0].textContent = 'Titulli i parë u ndryshua me JavaScript!';
+});
+
+// Ushtrimi 5
+const btnGjelber = document.getElementById('ngjyrosTeGjelber');
+const paragrafetGreen = document.querySelectorAll('.paragraf-green');
+
+btnGjelber.addEventListener('click', () => {
+  paragrafetGreen.forEach(p => {
+    p.style.color = 'green';
+  });
+});
+
+// Ushtrimi 6
+const btnNumero = document.getElementById('numeroParagrafet');
+const totalParagrafesh = document.getElementById('totalParagrafesh');
+
+btnNumero.addEventListener('click', () => {
+  const paragrafet = document.querySelectorAll('#paragrafetContainer p');
+  totalParagrafesh.textContent = paragrafet.length;
+});
+
+// Ushtrimi 7
+const btnNgjyrosListen = document.getElementById('ngjyrosListen');
+const listaItems = document.querySelectorAll('#listaItem li');
+
+btnNgjyrosListen.addEventListener('click', () => {
+  const ngjyrat = ['#e74c3c', '#3498db', '#2ecc71', '#f1c40f', '#9b59b6'];
+
+  listaItems.forEach((li, i) => {
+    li.style.color = ngjyrat[i % ngjyrat.length];
+    li.style.fontWeight = 'bold';
+  });
+});

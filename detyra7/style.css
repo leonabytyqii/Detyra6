@@ -1,3 +1,4 @@
+#editableBox { box-sizing: border-box; }
 body {
   font-family: Arial, sans-serif;
   padding: 24px;
@@ -64,3 +65,7 @@ input[type="text"] {
   width: 220px;
   margin-top: 6px;
 }
+
+.item { padding-left: 18px; }
+.item li { margin: 6px 0; }
+
