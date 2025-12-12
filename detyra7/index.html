@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ushtrime DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <h3>Ushtrimi 1</h3>
+    <p id="paragrafi-unik">Teksti i vjetër</p>
+    <button id="ndryshoTekstinBtn" class="btn">Ndrysho tekstin</button>
+  </section>
+
+  <section>
+    <h3>Ushtrimi 2</h3>
+    <button id="butoni-unik" class="btn">Butoni im</button>
+    <button id="bVendosTeKuqe" class="btn">Bëje sfondin të kuq</button>
+  </section>
+
+  <section>
+    <h3>Ushtrimi 3</h3>
+    <p>Div i modifikueshëm</p>
+
+    <div id="editableBox" contenteditable="true">
+      Kjo është përmbajtja e div-it. Mund ta ndryshosh direkt.
+    </div>
+
+    <label for="vleraBorder">Shkruaj vlerën e border p.sh. 4px dashed blue</label>
+    <input id="vleraBorder" type="text" placeholder="p.sh. 4px dashed blue">
+
+    <div>
+      <button id="aplikoBorder" class="btn">Apliko border</button>
+      <button id="ndryshoPermbajtjen" class="btn">Vendos tekst në div</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
