@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Show</title>
+    <style type="text/css">
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #kontenti {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      #kontenti h2 {
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: #333333;
+      }
+
+      #kontenti img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 2px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .buttons {
+        display: flex;
+        gap: 15px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 25px;
+        font-size: 14pt;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kontenti">
+      <header>
+        <h2>Slide Show</h2>
+        <img name="mySlide" id="slideshow" src="images/pinterest.png" alt="Slide" />
+      </header>
+      <div class="buttons">
+        <button onclick="prevImg()">Previous</button>
+        <button onclick="nextImg()">Next</button>
+      </div>
+    </div>
+    <script>
+      var i = 0;
+      var imgArray = [
+          "images/instagram.jpg",
+           "images/tiktok.png",
+           "images/youtube.png",
+           "images/pinterest.jpg"
+        
+      
+      ];
+
+       var i = 0; 
+  document.getElementById("slideshow").src = imgArray[i];
+
+  function nextImg() {
+    i = (i + 1) % imgArray.length;
+    document.getElementById("slideshow").src = imgArray[i];
+  }
+
+  function prevImg() {
+    i = (i - 1 + imgArray.length) % imgArray.length;
+    document.getElementById("slideshow").src = imgArray[i];
+  }
+    </script>
+  </body>
+</html>
